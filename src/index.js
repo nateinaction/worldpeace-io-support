@@ -1,8 +1,7 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import Auth from './components/Auth';
 import './index.css';
 import * as firebase from 'firebase';
+import routes from './config/routes'
 
 
 var config = {
@@ -15,6 +14,6 @@ var config = {
 firebase.initializeApp(config);
 
 ReactDOM.render(
-	<Auth />,
+	routes,
 	document.getElementById('root')
 );
